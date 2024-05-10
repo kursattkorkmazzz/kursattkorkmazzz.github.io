@@ -1,0 +1,81 @@
+<!--
+  This page lists all project that user own. 
+  The user can delete, add, read projects with this page.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./js/jquery/jquery.js" type="text/javascript" defer></script>
+    <script
+      src="./js/jquery/plugins/magnific-popup/magnific.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./js/jquery/plugins/SlipHover/jquery.sliphover.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <!-- Components-->
+    <script
+      src="./js/components/Footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./js/components/Header.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./js/components/ProjectCard.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./js/components/form/CreateProjectForm.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/components/form/createProjectForm.css" />
+    <link
+      rel="stylesheet"
+      href="./js/jquery/plugins/magnific-popup/magnific.css"
+    />
+    <title>Responsive Web Design Project</title>
+  </head>
+  <body>
+    <common-header></common-header>
+    <div id="create-project-form" class="create-project-form-container">
+      <create-project-form></create-project-form>
+    </div>
+    <section id="dashboard-page" class="page">
+      <div id="profile-section">
+        <img id="avatar-img" src="./assets/images/avatar.png" />
+        <p id="username">Username</p>
+        <p id="role"><< Role >></p>
+      </div>
+      <div id="project-section" class="h-screen">
+        <h2 id="project_section-header">Projects</h2>
+        <div id="project-list">
+          <project-card></project-card>
+          <project-card></project-card>
+          <project-card></project-card>
+        </div>
+      </div>
+      <button id="create_project_button" class="bg-orange text-white">
+        Create New Project
+      </button>
+    </section>
+    <common-footer></common-footer>
+    <script
+      src="./js/script/createNewProject.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/script/imagePreview.js" defer></script>
+  </body>
+</html>
